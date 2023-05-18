@@ -12,7 +12,7 @@ import {
 export default function Stats({ title, info }) {
   return (
     <StatsSection>
-      <StatsTitle>{title}</StatsTitle>
+      {title && <StatsTitle>{title}</StatsTitle>}
       <StatsList>
         {info.map(stat => {
           return (
@@ -28,7 +28,7 @@ export default function Stats({ title, info }) {
 }
 
 Stats.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   info: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
