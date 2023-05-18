@@ -8,6 +8,7 @@ const ProfileCard = styled.div`
   border: 1px solid #dee2e6;
   background-color: #fffffc;
   width: 300px;
+  margin: 0 auto;
 `;
 
 const ProfileImg = styled.img`
