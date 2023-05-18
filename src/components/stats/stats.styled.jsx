@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-// Helper function for generating random color
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF';
   let color = '#';
