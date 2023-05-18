@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+// Helper function for generating random color
+const getRandomColor = () => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i += 1) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
 const StatsSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -32,6 +42,7 @@ const StatsItem = styled.li`
   padding: 0 5px;
   border: 1px solid #dee2e6;
   padding: 10px 13.6px;
+  background-color: ${() => getRandomColor()};
 `;
 
 const StatsItemExt = styled.span`
